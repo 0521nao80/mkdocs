@@ -7,6 +7,8 @@ theme:
     text: Noto Sans JP
     code: JetBrains Mono
 
+nav:
+  - 概要: index.md
 
 markdown_extensions:
   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
