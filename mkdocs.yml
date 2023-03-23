@@ -11,6 +11,15 @@ nav:
   - 概要: index.md
 
 markdown_extensions:
+  # 目次
+  - toc:
+      # 自動生成を有効にする
+      permalink: true
+      # 目次の上に表示する文言
+      title: 見出し
+      # 見出しにする深さ
+      toc_depth: 3
+  # コードハイライトの設定（デフォルトのcodehiliteを使わずに拡張機能を使用）
   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
   - attr_list # for emoji and etc...
   - meta # for navigation and etc...
