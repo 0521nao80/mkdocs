@@ -26,8 +26,14 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-
-# plugins:
+plugins:
+  # 検索機能
+  - search:
+      lang: ja
+      # インデックス対象の条件
+      separator: '[\s\-\.]'
+      # 各ページのタイトル、セクション見出し、および全文にインデックスを付けます。
+      indexing: 'full'
 #   # https://liang2kl.codes/mkdocs-blogging-plugin/
 #   - blogging:
 #       dirs:
@@ -41,3 +47,4 @@ markdown_extensions:
 #       exclude:
 #         - index.md
 #         - blog/index.md
+
