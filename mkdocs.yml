@@ -3,10 +3,39 @@ site_name: My Docs
 theme:
   name: material
   language: ja
+  font: # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/
+    text: Noto Sans JP
+    code: JetBrains Mono
+
 
 markdown_extensions:
+  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - attr_list # for emoji and etc...
+  - meta # for navigation and etc...
+  - pymdownx.details # for admonition
+  - pymdownx.emoji: # https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#configuration
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
   - pymdownx.superfences:
       custom_fences:
+        # https://squidfunk.github.io/mkdocs-material/reference/diagrams/
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  # https://liang2kl.codes/mkdocs-blogging-plugin/
+  - blogging:
+      dirs:
+        - blog/article
+      size: 10
+      locale: ja_JP
+  - git-revision-date-localized:
+      type: custom
+      custom_format: "%Y/%m/%d %H:%M"
+      timezone: Asia/Tokyo
+      exclude:
+        - index.md
+        - blog/index.md
