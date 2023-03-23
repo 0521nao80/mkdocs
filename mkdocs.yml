@@ -27,17 +27,17 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-plugins:
-  # https://liang2kl.codes/mkdocs-blogging-plugin/
-  - blogging:
-      dirs:
-        - blog/article
-      size: 10
-      locale: ja_JP
-  - git-revision-date-localized:
-      type: custom
-      custom_format: "%Y/%m/%d %H:%M"
-      timezone: Asia/Tokyo
-      exclude:
-        - index.md
-        - blog/index.md
+# plugins:
+#   # https://liang2kl.codes/mkdocs-blogging-plugin/
+#   - blogging:
+#       dirs:
+#         - blog/article
+#       size: 10
+#       locale: ja_JP
+#   - git-revision-date-localized:
+#       type: custom
+#       custom_format: "%Y/%m/%d %H:%M"
+#       timezone: Asia/Tokyo
+#       exclude:
+#         - index.md
+#         - blog/index.md
