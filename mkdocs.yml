@@ -6,6 +6,13 @@ theme:
   font: # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/
     text: Noto Sans JP
     code: JetBrains Mono
+  features:
+    - navigation.instant     ## mkdocs for MaterialのSPA対応
+    - navigation.tabs        ## トップレベル項目を画面上部メニューにタブ表示
+    ##- navigation.sections  ## 項目のセクション表示 
+    ##- navigation.expand    ## 初期表示で全てのページ展開を有効化
+    - navigation.top       ## ページTOP遷移ボタンを有効化
+    - toc.integrate        ## 画面左右のメニューを統
 
 nav:
   - 概要: index.md
