@@ -58,3 +58,4 @@ plugins:
         - index.md
         - blog/index.md
 
+site_url: https://0521nao80.github.io/mkdocs/blog/
