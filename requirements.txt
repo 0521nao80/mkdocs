@@ -1,4 +1,4 @@
 mkdocs
 mkdocs-material
 mkdocs-blogging-plugin
-git-revision-date-localized
+mkdocs-git-revision-date-localized-plugin
