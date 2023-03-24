@@ -45,16 +45,16 @@ plugins:
       # 各ページのタイトル、セクション見出し、および全文にインデックスを付けます。
       indexing: 'full'
 #   # https://liang2kl.codes/mkdocs-blogging-plugin/
-#   - blogging:
-#       dirs:
-#         - blog/article
-#       size: 10
-#       locale: ja_JP
-#   - git-revision-date-localized:
-#       type: custom
-#       custom_format: "%Y/%m/%d %H:%M"
-#       timezone: Asia/Tokyo
-#       exclude:
-#         - index.md
-#         - blog/index.md
+  - blogging:
+      dirs:
+        - blog/article
+      size: 10
+      locale: ja_JP
+  - git-revision-date-localized:
+      type: custom
+      custom_format: "%Y/%m/%d %H:%M"
+      timezone: Asia/Tokyo
+      exclude:
+        - index.md
+        - blog/index.md
 
