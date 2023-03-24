@@ -9,6 +9,7 @@ theme:
 
 nav:
   - 概要: index.md
+  - Blog: blog/index.md
 
 markdown_extensions:
   # 目次
