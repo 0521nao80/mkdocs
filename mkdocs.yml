@@ -36,6 +36,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
+
 plugins:
   # 検索機能
   - search:
@@ -50,6 +52,8 @@ plugins:
         - blog
       size: 10
       locale: ja_JP
+      features:
+        tags: {}
   - git-revision-date-localized:
       type: custom
       custom_format: "%Y/%m/%d %H:%M"
