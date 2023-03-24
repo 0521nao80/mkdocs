@@ -47,7 +47,7 @@ plugins:
 #   # https://liang2kl.codes/mkdocs-blogging-plugin/
   - blogging:
       dirs:
-        - blog/article
+        - blog
       size: 10
       locale: ja_JP
   - git-revision-date-localized:
